@@ -50,15 +50,14 @@
 body {
 	margin: 0;
 	padding: 0;
-	padding-left: 5%;
-	padding-right: 5%;
+	display: flex;
 }
 
 .left-half {
 	display: flex;
 	position: relative;
 	width: 40vw;
-	max-width: 40vw;
+	max-width: 618px;
 	height: 100vh;
 	justify-content: center;
 }
@@ -98,6 +97,106 @@ body {
 	padding-left: 5px;
 }
 
-/* .right-half {
-	display: none;
-} */
+.right-half {
+	width: 60vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.emphasize {
+	font-style: italic;
+}
+
+.intro {
+	margin-top: 20%;
+	margin-bottom: 10%;
+	margin-left: 5%;
+	margin-right: 10%;
+	max-height: 30vh;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	height: 30vh;
+	margin-left: 5%;
+	margin-right: 10%;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.names,
+.contacts,
+.passwords {
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+
+.first-name-container,
+.last-name-container,
+.email-container,
+.phone-number-container,
+.password-container,
+.password-confirm-container {
+	display: flex;
+	flex-direction: column;
+	margin: 1%;
+}
+
+input {
+	width: 90%;
+	border-radius: 4px;
+	outline: none;
+}
+
+label {
+	font-size: 10px;
+}
+
+input:focus {
+	border: 2px solid rgb(30, 130, 224);
+	outline: 1px solid rgb(30, 130, 224);
+}
+
+input:invalid {
+	border: 1px solid red;
+	outline: 1px solid red;
+}
+
+.create-section {
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 10%;
+}
+
+.join {
+	border-radius: 4px;
+	color: white;
+	background: rgb(30, 130, 224);
+	width: 30%;
+}
+
+.log-in {
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.form-container {
+	border-bottom: 1px solid grey;
+	width: 100%;
+	box-shadow: 0 4px 2px -2px gray;
+}
+
+.link {
+	color: rgb(30, 130, 224);
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+}

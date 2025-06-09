@@ -38,27 +38,98 @@
 				<p>
 					Experience the wonder of all that magic has to offer! Cast
 					spells, brew potions, defeat dragons, and enchant mortals!
+					<br />
+					Enroll <span class="emphasize">now</span> to get started.
 				</p>
-				<p>Enroll <span class="emphasize">now</span> to get started.</p>
 				<p>You <span class="emphasize">know</span> you want to.</p>
 			</div>
-			<div class="inputs">
-				FIRST NAME
-				<input type="text" />
-				LAST NAME
-				<input type="text" />
-				EMAIL
-				<input type="text" />
-				PHONE NUMBER
-				<input type="text" />
-				PASSWORD
-				<input type="text" />
-				CONFIRM PASSWORD
-				<input type="text" />
+			<div class="form-container">
+				<form
+					action="thenameofthewebsitethatitisbeingsentto.com/whereelseisitgoingtointhisplace/here"
+					method="post"
+				>
+					<legend>Accio!</legend>
+					<div class="inputs">
+						<fieldset>
+							<div class="names">
+								<div class="first-name-container">
+									<label for="first-name">FIRST NAME</label>
+									<input
+										type="text"
+										id="first-name"
+										name="first-name"
+										placeholder="Draco"
+									/>
+								</div>
+								<div class="last-name-container">
+									<label for="last-name">LAST NAME</label>
+									<input
+										type="text"
+										id="last-name"
+										name="last-name"
+										placeholder="Malfoy"
+									/>
+								</div>
+							</div>
+							<div class="contacts">
+								<div class="email-container">
+									<label for="email">EMAIL ADDRESS</label>
+									<input
+										type="email"
+										id="email"
+										name="email"
+										placeholder="pottersux@pigfarts.wzrd"
+									/>
+								</div>
+								<div class="phone-number-container">
+									<label for="phone-number"
+										>PHONE NUMBER</label
+									>
+									<input
+										type="number"
+										id="phone-number"
+										name="phone-number"
+										placeholder="1234567890"
+									/>
+								</div>
+							</div>
+							<div class="passwords">
+								<div class="password-container">
+									<label for="password">PASSWORD</label>
+									<input
+										type="password"
+										id="password"
+										name="password"
+										placeholder="ChooseAStr0ngP@ssword"
+										minlenght="8"
+										maxlength="16"
+										required
+									/>
+								</div>
+								<div class="password-confirm-container">
+									<label for="password-confirm"
+										>CONFIRM PASSWORD</label
+									>
+									<input
+										type="password"
+										id="password-confirm"
+										name="password-confirm"
+										placeholder="ChooseAStr0ngP@ssword"
+										minlenght="8"
+										maxlength="16"
+										required
+									/>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</form>
 			</div>
 			<div class="create-section">
-				<button>Join Pigfarts</button>
-				Already a student? Log in
+				<button class="join">Join Pigfarts</button>
+				<div class="log-in">
+					Already a student? <span class="link">Log in</span>
+				</div>
 			</div>
 		</div>
 	</body>
